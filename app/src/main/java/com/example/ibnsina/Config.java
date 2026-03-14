@@ -1,6 +1,6 @@
 package com.example.ibnsina;
 
 public class Config {
-    // আপনার নতুন লিঙ্কটি এখানে বসানো হলো
-    public static final String SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxf8kiSeqv49M-S9LAE956_CauL-Ow2fNnE5c6Dw7HTFMEa85INc6lz8xw3P8CY9uhjbw/exec";
+    // আপনার নতুন এবং সঠিক লিঙ্কটি এখানে বসানো হলো
+    public static final String SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwDV0cjV5g1PQ6NEK84xKweVK618WD91gYX1kAYsJxe8rfxykWt0ZbuKoarIYO7vrln/exec";
 }

@@ -29,10 +29,19 @@ public class InventoryModel {
     public String getTotalQty() { return totalQty; }
     public String getLooseQty() { return looseQty; }
     public String getCartonQty() { return cartonQty; }
+    
     public String getCartonSize() { return cartonSize; }
+    public void setCartonSize(String cartonSize) { this.cartonSize = cartonSize; }
+    
     public String getShortQty() { return shortQty; }
+    public void setShortQty(String shortQty) { this.shortQty = shortQty; }
+
     public String getExcessQty() { return excessQty; }
+    public void setExcessQty(String excessQty) { this.excessQty = excessQty; }
+
     public String getRemark() { return remark; }
+    public void setRemark(String remark) { this.remark = remark; }
+
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 }

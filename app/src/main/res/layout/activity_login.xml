@@ -13,14 +13,14 @@
         android:gravity="center_horizontal"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:paddingTop="20dp"
+        android:paddingTop="40dp"
         android:paddingBottom="24dp">
 
-        <!-- Logo Section -->
         <androidx.cardview.widget.CardView
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp">
@@ -29,21 +29,21 @@
                 android:id="@+id/ivLoginLogo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="IBN SINA Logo"
                 android:padding="8dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/logo_ibnsina"
-                android:contentDescription="IBN SINA Logo" />
+                android:src="@drawable/logo_ibnsina" />
         </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="The IBN SINA Pharmaceutical Industry PLC"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#2E7D32"
             android:textAlignment="center"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="20dp"/>
 
         <!-- User ID Box -->
         <com.google.android.material.textfield.TextInputLayout
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User ID"
-            android:textColorHint="#666666"
+            android:textColorHint="#000000"
             app:hintTextColor="#2E7D32"
             app:boxStrokeColor="#2E7D32"
             app:boxCornerRadiusTopStart="15dp"
@@ -68,16 +68,16 @@
                 android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- User Name Box (Read Only Style) -->
+        <!-- User Name Box -->
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:hint="User Name"
-            android:textColorHint="#666666"
+            android:textColorHint="#000000"
             app:hintTextColor="#2E7D32"
-            app:boxStrokeColor="#CCCCCC"
+            app:boxStrokeColor="#2E7D32"
             app:boxCornerRadiusTopStart="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
@@ -87,24 +87,23 @@
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#444444"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:focusable="false"
                 android:clickable="false"
-                android:background="#F0F0F0"
                 android:inputType="none"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Designation Box (Read Only Style) -->
+        <!-- Designation Box -->
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:hint="Designation"
-            android:textColorHint="#666666"
+            android:textColorHint="#000000"
             app:hintTextColor="#2E7D32"
-            app:boxStrokeColor="#CCCCCC"
+            app:boxStrokeColor="#2E7D32"
             app:boxCornerRadiusTopStart="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
@@ -114,26 +113,25 @@
                 android:id="@+id/etDesignation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#444444"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:focusable="false"
                 android:clickable="false"
-                android:background="#F0F0F0"
                 android:inputType="none"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Password Box with Eye Icon -->
+        <!-- Password Box -->
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:hint="Password"
-            android:textColorHint="#666666"
+            android:textColorHint="#000000"
             app:hintTextColor="#2E7D32"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#2E7D32"
             app:boxStrokeColor="#2E7D32"
-            app:endIconMode="password_toggle"
-            app:endIconTint="#2E7D32"
             app:boxCornerRadiusTopStart="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
@@ -148,32 +146,29 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Login Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:layout_marginTop="24dp"
             android:text="Login"
             android:textStyle="bold"
             android:backgroundTint="#2E7D32"
             android:textColor="#FFFFFF"
-            app:cornerRadius="15dp"
-            app:elevation="4dp" />
+            app:cornerRadius="15dp" />
 
-        <!-- Loading Spinner -->
         <ProgressBar
             android:id="@+id/loginProgressBar"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="12dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
             android:visibility="gone"
             android:indeterminateTint="#2E7D32"/>
 
-        <!-- Spacing for keyboard -->
+        <!-- Bottom space to allow extra scrolling when keyboard is open -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="120dp" />
+            android:layout_height="100dp" />
 
     </LinearLayout>
 </ScrollView>
